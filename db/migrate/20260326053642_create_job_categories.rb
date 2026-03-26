@@ -1,0 +1,1 @@
+class CreateJobCategoriesTable < ActiveRecord::Migration[6.0]\n  def change\n    create_table :job_categories do |t|\n      t.string :name, null: false\n      t.text :description\n      t.timestamps\n    end\n  end\nend\n
